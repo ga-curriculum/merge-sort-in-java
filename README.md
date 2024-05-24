@@ -1,15 +1,27 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Understanding Merge Sort
 
-| Title                    | Type   | Duration | Author               |
-|--------------------------|--------|----------|----------------------|
-| Understanding Merge Sort | Lesson | 1:00     | Suresh Melvin Sigera |
+## Introduction
+
+Merge Sort is a sorting algorithm that utilizes the divide and conquer method to organize elements within an array. The process starts by dividing the array into two halves, and this division continues recursively until each sub-array consists of a single element. Once the division reaches this level, the merging phase starts. During this phase, the sub-arrays are combined in a sorted manner into an auxiliary array, ensuring that the elements are ordered correctly as they are merged back together.
 
 ## Learning Objectives
 
 By the end of this lesson, students will be able to:
 
-- Merge Sort
-- Optimality of efficiency in sorting algorithms
+- Comprehend the divide and conquer strategy used by Merge Sort to partition arrays and recursively sort the partitions.
+- Assess the time complexities of Merge Sort in best, average, and worst-case scenarios, and understand the space complexity implications.
+- Explore optimization techniques such as iterative implementations and hybrid algorithms to enhance Merge Sort’s efficiency and minimize resource usage.
+- Implement Merge Sort in Java and understand the practical considerations for its use.
+- Apply knowledge of Merge Sort’s characteristics and optimizations to make informed decisions about its implementation based on specific dataset properties and computational constraints.
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [How Merge Sort Works](#how-merge-sort-works)
+3. [Time and Space Complexity](#time-and-space-complexity)
+4. [Optimizations and Practical Considerations](#optimizations-and-practical-considerations)
+5. [Implementation in Java](#implementation-in-java)
+6. [Summary and Key Takeaways](#summary-and-key-takeaways)
 
 ### Merge Sort
 
@@ -38,7 +50,7 @@ Merge Sort efficiently organizes the entire array.
 
 ![quick-sort.png](assets/merge-sort.png)
 
-### Time and Space Complexity
+## Time and Space Complexity
 
 #### Time Complexity
 
@@ -54,7 +66,7 @@ The space complexity for Merge Sort is \(O(n)\) due to the necessity of allocati
 the sorted sub-arrays. This factor becomes particularly significant when dealing with large arrays, as the additional
 space requirement can be substantial.
 
-#### Optimizations and Practical Considerations
+## Optimizations and Practical Considerations
 
 1. **Non-Recursive Implementation**: Although traditionally implemented recursively, Merge Sort can also be written
    iteratively which can help in reducing the overhead associated with recursive calls.
