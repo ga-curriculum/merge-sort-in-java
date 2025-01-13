@@ -1,0 +1,24 @@
+import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
+
+// Add microlessons here, in the order they should be delivered
+
+setup = new Template.Microlesson {
+  friendlyName = "Setup"
+  dirName = "setup"
+  type = "Content"
+  videoUrl = ""
+}
+
+mergeSort = new Template.Microlesson {
+  friendlyName = "Merge Sort"
+  dirName = "merge-sort"
+  type = "Content"
+  videoUrl = ""
+}
+
+mergeSortImplementation = new Template.Microlesson {
+  friendlyName = "Merge Sort Implementation"
+  dirName = "merge-sort-implementation"
+  type = "Content"
+  videoUrl = ""
+}
