@@ -11,6 +11,7 @@ Merge Sort is a sorting algorithm that follows a divide-conquer-combine approach
 - **Divide** _(Split by length)_ : Recursively keep splitting an array into two sub-arrays of equal length until each half contains a single element.
 - **Conquer**  _(Merge)_ : Starting from the bottom most (single element) sub-arrays, compare the elements in each sub-array pair and merge them to a third array in a sorted manner. The recursion logic in the **Divide** step takes care that the merge process is repeated for all the sub-arrays created by each split in a LIFO manner (the last split is sorted and merged first). 
 
+![An image showing how merge sort works for an array with 4 elements](./assets/MergeSort.png)
 
 ## Pseudocode for merge sort
 ```plaintext
@@ -57,6 +58,3 @@ Unlike some other sorting algorithms, Merge Sort is not an in-place algorithm an
 1. Uses additional space for left and right arrays (auxiliary arrays) during merging and, hence, adding an additional space complexity of O(n).
 2. Performs poorly for small datasets due to relatively high overhead.
 3. Because it uses recursion, its recursive overhead can increase for very large data.
-
-## Final reflections
-Merge Sort is an efficient and robust sorting algorithm, suitable for large datasets and stable sorting requirements. While its space complexity can be a drawback, its predictable performance makes it a reliable choice for many applications. 

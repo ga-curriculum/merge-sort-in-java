@@ -75,3 +75,5 @@ public class MergeSort {
     }
 }
 ```
+## Final reflections
+Merge Sort is an efficient and robust sorting algorithm, suitable for large datasets and stable sorting requirements. While its space complexity can be a drawback, its predictable performance makes it a reliable choice for many applications. 
